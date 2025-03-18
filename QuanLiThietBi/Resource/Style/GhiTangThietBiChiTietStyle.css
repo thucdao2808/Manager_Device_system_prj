@@ -1,0 +1,285 @@
+﻿.container-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Nhóm nút bấm */
+.group-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.btn-style {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-insert {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-download {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-remove {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-searching {
+    background-color: #ffc107;
+    color: black;
+}
+
+.btn-style:hover {
+    opacity: 0.8;
+}
+
+/* Bộ lọc tìm kiếm */
+.group-filters {
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.date-selection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.filter-box, .search-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.label-style {
+    font-weight: bold;
+    color: #333;
+}
+
+.textbox-style, .input-textbox {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 200px;
+}
+
+/* GridView */
+.gridview {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #fff;
+}
+
+    .gridview th {
+        background-color: #0066A2;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .gridview td {
+        padding: 8px;
+        text-align: center;
+    }
+
+.grid-checkbox {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.grid-icon {
+    cursor: pointer;
+}
+
+.grid-price {
+    font-weight: bold;
+    color: #d9534f;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .date-selection {
+        flex-direction: column;
+    }
+
+    .textbox-style, .input-textbox {
+        width: 100%;
+    }
+
+    .gridview th, .gridview td {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
+
+/* Panel chính */
+.pnlDetailChung {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+    /* Panel container */
+    .pnlDetailChung > .panel-container {
+        margin-top: 15px;
+        background-color: #fff;
+    }
+
+/* Nhóm thông tin */
+.Box-ContainItem {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.ContainItem {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* Nhóm form */
+.form-groups, .form-groupss {
+    margin-bottom: 15px;
+}
+
+    .form-groups label,
+    .form-groupss label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #333;
+    }
+
+.form-control,
+.form-controls {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+.form-controls {
+    height: 80px;
+    resize: vertical;
+}
+
+/* GridView */
+.table {
+    width: 100%;
+    font-size: 9px;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #fff;
+}
+
+    .table th {
+        background-color: #0066A2;
+        color: white;
+        text-align: center;
+    }
+
+    .table td {
+        padding: 8px;
+        text-align: center;
+    }
+
+/* Nút sửa */
+.edit-button {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+/* Nhãn hiển thị */
+.label-field {
+    font-weight: bold;
+    color: #444;
+}
+
+/* Header số hiệu */
+th[colspan="2"] {
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .Box-ContainItem {
+        flex-direction: column;
+    }
+
+    .ContainItem {
+        width: 100%;
+    }
+
+    .table th,
+    .table td {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
+/* Căn giữa khối chứa thông tin và giới hạn chiều rộng */
+.Box-ContainItem {
+    display: flex;
+    justify-content: space-between; /* Canh đều hai bên */
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    gap: 20px; /* Khoảng cách giữa các khối */
+}
+
+/* Định dạng các item bên trong */
+.ContainItem {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* Ô mô tả có độ rộng lớn hơn để nằm giữa */
+.description-box {
+    flex: 2;
+    text-align: center;
+}
+
+/* Định dạng chung cho ô nhập */
+.form-groupss label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-controla {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+/* Responsive: Khi màn hình nhỏ, các item sẽ xếp dọc */
+@media (max-width: 768px) {
+    .Box-ContainItem {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .description-box {
+        text-align: left;
+    }
+}

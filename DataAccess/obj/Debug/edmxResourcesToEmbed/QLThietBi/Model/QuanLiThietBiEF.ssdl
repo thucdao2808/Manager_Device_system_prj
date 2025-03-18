@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QuanLyThietBiModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="DangNhap">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DMRootNHaCungCap">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenNhaCungCap" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="DiaChi" Type="nvarchar" MaxLength="1000" Nullable="false" />
+    <Property Name="DienThoaiNguoiLienHe" Type="nvarchar" MaxLength="12" Nullable="false" />
+    <Property Name="HoTenNguoiLienHe" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="isSuDung" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DmRootThietBiDonViTinh">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenDonViTinh" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="1000" />
+    <Property Name="isSuDung" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DMRootThietBiNhomThietBi">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenNhomThietBi" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="1000" />
+    <Property Name="ThuTu" Type="int" />
+    <Property Name="NhomThietBiChaID" Type="int" />
+  </EntityType>
+  <EntityType Name="DMRootThietBiThuongHieu">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenThuongHieu" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DMRootThietBiTrangThaiMuon">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenTrangThaiMuon" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DMRootThietBiXepLoaiKhoPhong">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenXepLoaiKhoPhong" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="1000" />
+    <Property Name="isSuDung" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GhiTangThietBi">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SoPhieu" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="NgayLapPhieu" Type="datetime" Nullable="false" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="1000" />
+    <Property Name="DonViID" Type="bigint" Nullable="false" />
+    <Property Name="NguoiTaoID" Type="bigint" />
+    <Property Name="NgayTao" Type="datetime" />
+    <Property Name="NguoiSuaID" Type="bigint" />
+    <Property Name="NgaySua" Type="datetime" />
+  </EntityType>
+  <EntityType Name="GhiTangThietBiChiTiet">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GhiTangThietBiID" Type="int" Nullable="false" />
+    <Property Name="KhoPhongID" Type="int" Nullable="false" />
+    <Property Name="ThietBiID" Type="int" Nullable="false" />
+    <Property Name="SoLuong" Type="int" Nullable="false" />
+    <Property Name="SoHieuTu" Type="int" />
+    <Property Name="SoHieuDen" Type="int" />
+    <Property Name="DonGia" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="ThanhTien" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="NgayHetBaoHanh" Type="datetime" />
+    <Property Name="NhaCungCapID" Type="int" Nullable="false" />
+    <Property Name="ThuongHieuID" Type="int" />
+    <Property Name="NgayMua" Type="datetime" Nullable="false" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="1000" />
+    <Property Name="DonViID" Type="bigint" Nullable="false" />
+    <Property Name="NguoiTaoID" Type="bigint" />
+    <Property Name="NgayTao" Type="datetime" />
+    <Property Name="NguoiSuaID" Type="bigint" />
+    <Property Name="NgaySua" Type="datetime" />
+  </EntityType>
+  <EntityType Name="KhoPhong">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenKhoPhong" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="XepLoaiKhoPhongID" Type="int" Nullable="false" />
+    <Property Name="NguoiPhuTrachID" Type="int" />
+    <Property Name="isPhongChucNang" Type="bit" Nullable="false" />
+    <Property Name="isSuDung" Type="bit" Nullable="false" />
+    <Property Name="DonViID" Type="bigint" Nullable="false" />
+    <Property Name="NguoiTaoID" Type="bigint" />
+    <Property Name="NgayTao" Type="datetime" />
+    <Property Name="NguoiSuaID" Type="bigint" />
+    <Property Name="NgaySua" Type="datetime" />
+  </EntityType>
+  <EntityType Name="NhaCungCap">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenNhaCungCap" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Diachi" Type="nvarchar" MaxLength="1000" Nullable="false" />
+    <Property Name="DienThoaiNguoiLienHe" Type="nvarchar" MaxLength="12" Nullable="false" />
+    <Property Name="HoTenNguoiLienHe" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="isSuDung" Type="bit" Nullable="false" />
+    <Property Name="DonViID" Type="bigint" />
+    <Property Name="NguoiTaoID" Type="bigint" />
+    <Property Name="NgayTao" Type="datetime" />
+    <Property Name="NguoiSuaID" Type="bigint" />
+    <Property Name="NgaySua" Type="datetime" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="2000" />
+  </EntityType>
+  <EntityType Name="NhomThietBi">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenNhomThietBi" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="1000" />
+    <Property Name="ThuTu" Type="int" />
+    <Property Name="isSuDung" Type="bit" Nullable="false" />
+    <Property Name="isHeThong" Type="bit" Nullable="false" />
+    <Property Name="NhomThietBiChaID" Type="int" />
+    <Property Name="DmRootThietBiNhomThietBiID" Type="tinyint" />
+    <Property Name="isCamera" Type="bit" Nullable="false" />
+    <Property Name="DonviID" Type="bigint" Nullable="false" />
+    <Property Name="NguoiTaoID" Type="bigint" />
+    <Property Name="NgayTao" Type="datetime" />
+    <Property Name="NguoiSuaID" Type="bigint" />
+    <Property Name="NgaySua" Type="datetime" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="ThietBi">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MaThietBi" Type="nvarchar" MaxLength="20" />
+    <Property Name="TenThietBi" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="DonViTinhID" Type="int" Nullable="false" />
+    <Property Name="NhomThietBiID" Type="int" Nullable="false" />
+    <Property Name="DoiBaoTriID" Type="int" />
+    <Property Name="NhanSuBaoTri" Type="bigint" />
+    <Property Name="NhaCungCapID" Type="int" />
+    <Property Name="ThuongHieuID" Type="int" />
+    <Property Name="isQuanLyTheoSoLuong" Type="bit" Nullable="false" />
+    <Property Name="isQuanLyTheoSoHieu" Type="bit" Nullable="false" />
+    <Property Name="isPhongBanSuDung" Type="bit" Nullable="false" />
+    <Property Name="isThietBiTieuHao" Type="bit" Nullable="false" />
+    <Property Name="isNhanVienSuDung" Type="bit" Nullable="false" />
+    <Property Name="isSuDung" Type="bit" Nullable="false" />
+    <Property Name="ThuTu" Type="int" />
+    <Property Name="MucDichSuDung" Type="nvarchar" MaxLength="500" />
+    <Property Name="MoTa" Type="nvarchar" MaxLength="1000" />
+    <Property Name="TanSuatSoNgayBaoTri" Type="tinyint" />
+    <Property Name="ThoiLuongBaoTri" Type="tinyint" />
+    <Property Name="AnhDaiDien" Type="nvarchar" MaxLength="1000" />
+    <Property Name="DonViID" Type="bigint" Nullable="false" />
+    <Property Name="NguoiTaoID" Type="bigint" />
+    <Property Name="NgayTao" Type="datetime" />
+    <Property Name="NguoiSuaID" Type="bigint" />
+    <Property Name="NgaySua" Type="datetime" />
+  </EntityType>
+  <EntityType Name="ThietBiChiTiet">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GhiTangThietBiChiTietID" Type="int" Nullable="false" />
+    <Property Name="ThietBiID" Type="int" Nullable="false" />
+    <Property Name="TenKhac" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="SoLuong" Type="int" Nullable="false" />
+    <Property Name="SoHieu" Type="int" />
+    <Property Name="isPhongBanSuDung" Type="bit" Nullable="false" />
+    <Property Name="isNhanVienSuDung" Type="bit" Nullable="false" />
+    <Property Name="isChuaSuDung" Type="bit" Nullable="false" />
+    <Property Name="PhongBanID" Type="int" Nullable="false" />
+    <Property Name="NhanSuID" Type="bigint" />
+    <Property Name="NgaySuDung" Type="date" Nullable="false" />
+    <Property Name="SoSerial" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="NamSanXuat" Type="int" />
+    <Property Name="CauHinh" Type="nvarchar" MaxLength="200" />
+    <Property Name="ViTriLapDat" Type="nvarchar" MaxLength="1000" />
+    <Property Name="ViTri1" Type="nvarchar" MaxLength="100" />
+    <Property Name="ViTri2" Type="nvarchar" MaxLength="100" />
+    <Property Name="UrlRTSP1" Type="nvarchar" MaxLength="1000" />
+    <Property Name="UrlRTSP2" Type="nvarchar" MaxLength="1000" />
+    <Property Name="ThietBiTrangThaiCAMID" Type="tinyint" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="1000" />
+    <Property Name="DonViID" Type="bigint" Nullable="false" />
+    <Property Name="NguoiTaoID" Type="bigint" />
+    <Property Name="NgayTao" Type="datetime" />
+  </EntityType>
+  <EntityContainer Name="QuanLyThietBiModelStoreContainer">
+    <EntitySet Name="DangNhap" EntityType="Self.DangNhap" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DMRootNHaCungCap" EntityType="Self.DMRootNHaCungCap" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DmRootThietBiDonViTinh" EntityType="Self.DmRootThietBiDonViTinh" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DMRootThietBiNhomThietBi" EntityType="Self.DMRootThietBiNhomThietBi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DMRootThietBiThuongHieu" EntityType="Self.DMRootThietBiThuongHieu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DMRootThietBiTrangThaiMuon" EntityType="Self.DMRootThietBiTrangThaiMuon" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DMRootThietBiXepLoaiKhoPhong" EntityType="Self.DMRootThietBiXepLoaiKhoPhong" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GhiTangThietBi" EntityType="Self.GhiTangThietBi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GhiTangThietBiChiTiet" EntityType="Self.GhiTangThietBiChiTiet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KhoPhong" EntityType="Self.KhoPhong" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NhaCungCap" EntityType="Self.NhaCungCap" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NhomThietBi" EntityType="Self.NhomThietBi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ThietBi" EntityType="Self.ThietBi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ThietBiChiTiet" EntityType="Self.ThietBiChiTiet" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

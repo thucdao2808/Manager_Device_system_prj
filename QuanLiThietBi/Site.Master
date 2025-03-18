@@ -1,0 +1,134 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="QuanLiThietBi.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="Resource/Style/SiteMasster.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.bg-img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+.Menubar {
+    display: flex;
+    align-items: center;
+    background-color: #2c3e50;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.imgSys {
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.itemMenuBar {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.DetailItemMenuBar {
+    margin-right: 15px;
+}
+
+.DetailItemMenuBar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.DetailItemMenuBar a:hover {
+    background-color: #34495e;
+}
+
+main {
+    padding: 20px;
+}
+
+    footer {
+        background-color: #2c3e50;
+        color: #ecf0f1;
+        padding: 20px;
+        text-align: center;
+    }
+    footer a {
+        color: #ecf0f1;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+    footer a:hover {
+        text-decoration: underline;
+    }
+    </style>
+</head>
+<body>
+        <header>
+            <nav class="Menubar">
+                <asp:Image ID="Image1" ImageUrl="~/Resource/Images/Screenshot 2025-03-04 010109.png" runat="server" class="imgSys" />
+                <ul class="itemMenuBar">
+                    <li class="DetailItemMenuBar">
+                        <asp:HyperLink ID="hlNhaCungCap" runat="server" NavigateUrl="~/FormThietBi/NhaCungCap.aspx">Nhà Cung Cấp</asp:HyperLink>
+                    </li>
+                    <li class="DetailItemMenuBar">
+                        <asp:HyperLink ID="hlNhomThietBi" runat="server" NavigateUrl="~/FormThietBi/NhomThietBi.aspx">Nhóm Thiết Bị</asp:HyperLink>
+                    </li>
+                    <li class="DetailItemMenuBar">
+                        <asp:HyperLink ID="hlKhoPhong" runat="server" NavigateUrl="~/FormThietBi/QuanLiKhoPhong.aspx">Quản Lý Kho Phòng</asp:HyperLink>
+                    </li>
+                    <li class="DetailItemMenuBar">
+                        <asp:HyperLink ID="hlThietBi" runat="server" NavigateUrl="~/FormThietBi/ThietBi.aspx">Thiết Bị</asp:HyperLink>
+                    </li> 
+                    <li class="DetailItemMenuBar">
+                        <asp:HyperLink ID="hlGhiTangThietBi" runat="server" NavigateUrl="~/FormThietBi/GhiTangThietBiChiTiet.aspx">Thiết Bị</asp:HyperLink>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    
+
+        <main>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+        </main>
+    <footer>
+    <div>
+        <h3>Hệ Thống Quản Lý Thiết Bị</h3>
+        <p>&copy; 2025 - Bảo lưu mọi quyền</p>
+        <p>Email: support@quanlythietbi.com | Hotline: 0123 456 789</p>
+        <p>
+            <a href="#">Chính sách bảo mật</a> |
+            <a href="#">Điều khoản sử dụng</a>
+        </p>
+    </div>
+</footer>
+</body>
+
+
+</html>

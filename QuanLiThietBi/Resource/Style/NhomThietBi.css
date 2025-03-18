@@ -1,0 +1,160 @@
+﻿.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn-action {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-add {
+    background: #28a745;
+    color: white;
+}
+
+.btn-export {
+    background: #ffc107;
+    color: white;
+}
+
+.btn-delete {
+    background: #dc3545;
+    color: white;
+}
+
+.search-section {
+    margin: 20px 0;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.box-nav {
+    display: flex;
+    gap: 15px;
+}
+
+.dropdown-filter,
+.textbox-search {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-search {
+    padding: 8px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.table-container {
+    margin-top: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .table th,
+    .table td {
+        padding: 10px;
+        border: 1px solid #ccc;
+        text-align: center;
+    }
+
+    .table th {
+        background: #007bff;
+        color: white;
+    }
+
+    .table tr:nth-child(even) {
+        background: #f2f2f2;
+    }
+
+.checkbox {
+    transform: scale(1.2);
+}
+
+.device-group-panel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 400px;
+}
+
+.device-group-title {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.device-group-item {
+    margin-bottom: 10px;
+}
+
+.device-group-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.device-group-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.device-group-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.device-group-btn {
+    padding: 8px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

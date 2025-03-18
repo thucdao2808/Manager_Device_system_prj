@@ -1,0 +1,160 @@
+﻿/* Reset chung cho toàn trang */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.btn-action {
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    color: white;
+}
+
+.btn-add {
+    background: green;
+}
+
+.btn-export {
+    background: blue;
+}
+
+.btn-delete {
+    background: red;
+}
+
+.search-section {
+    margin-bottom: 20px;
+}
+
+.box-nav {
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search-title {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.textbox-search {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.btn-search {
+    margin-left: 10px;
+    padding: 8px 15px;
+    background: orange;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .table th, .table td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .table th {
+        background: #007bff;
+        color: white;
+    }
+
+.checkbox {
+    cursor: pointer;
+}
+
+.formAdd, .formEdit {
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+    .formAdd h1, .formEdit h1 {
+        text-align: center;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+.ItemAdd, .formWork {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ItemDeltails, .ItemEdit {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-checkbox {
+    cursor: pointer;
+}
