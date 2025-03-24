@@ -3,16 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Thucd\\source\\repos\\DataAccess\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7EECC97F-09A9-4D8C-BEE4-F9F2A32F9E41}|QuanLiThietBi\\QuanLiThietBi.csproj|c:\\users\\thucd\\source\\repos\\dataaccess\\quanlithietbi\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{7EECC97F-09A9-4D8C-BEE4-F9F2A32F9E41}|QuanLiThietBi\\QuanLiThietBi.csproj|solutionrelative:quanlithietbi\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7EECC97F-09A9-4D8C-BEE4-F9F2A32F9E41}|QuanLiThietBi\\QuanLiThietBi.csproj|c:\\users\\thucd\\source\\repos\\dataaccess\\quanlithietbi\\formthietbi\\ghitangthietbichitiet.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EECC97F-09A9-4D8C-BEE4-F9F2A32F9E41}|QuanLiThietBi\\QuanLiThietBi.csproj|solutionrelative:quanlithietbi\\formthietbi\\ghitangthietbichitiet.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EECC97F-09A9-4D8C-BEE4-F9F2A32F9E41}|QuanLiThietBi\\QuanLiThietBi.csproj|c:\\users\\thucd\\source\\repos\\dataaccess\\quanlithietbi\\formthietbi\\nhacungcap.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EECC97F-09A9-4D8C-BEE4-F9F2A32F9E41}|QuanLiThietBi\\QuanLiThietBi.csproj|solutionrelative:quanlithietbi\\formthietbi\\nhacungcap.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7EECC97F-09A9-4D8C-BEE4-F9F2A32F9E41}|QuanLiThietBi\\QuanLiThietBi.csproj|C:\\Users\\Thucd\\source\\repos\\DataAccess\\quanlithietbi\\formthietbi\\ghitangthietbichitiet.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{7EECC97F-09A9-4D8C-BEE4-F9F2A32F9E41}|QuanLiThietBi\\QuanLiThietBi.csproj|solutionrelative:quanlithietbi\\formthietbi\\ghitangthietbichitiet.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E46666BC-DDBC-4570-8261-95DC5C024AFE}|DataAccess\\DataAccess.csproj|c:\\users\\thucd\\source\\repos\\dataaccess\\dataaccess\\qlthietbi\\bo\\ghitangthietbibo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E46666BC-DDBC-4570-8261-95DC5C024AFE}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\qlthietbi\\bo\\ghitangthietbibo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E46666BC-DDBC-4570-8261-95DC5C024AFE}|DataAccess\\DataAccess.csproj|C:\\Users\\Thucd\\source\\repos\\DataAccess\\dataaccess\\qlthietbi\\bo\\ghitangthietbichitietbo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E46666BC-DDBC-4570-8261-95DC5C024AFE}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\qlthietbi\\bo\\ghitangthietbichitietbo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EECC97F-09A9-4D8C-BEE4-F9F2A32F9E41}|QuanLiThietBi\\QuanLiThietBi.csproj|c:\\users\\thucd\\source\\repos\\dataaccess\\quanlithietbi\\formthietbi\\nhacungcap.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{7EECC97F-09A9-4D8C-BEE4-F9F2A32F9E41}|QuanLiThietBi\\QuanLiThietBi.csproj|solutionrelative:quanlithietbi\\formthietbi\\nhacungcap.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E46666BC-DDBC-4570-8261-95DC5C024AFE}|DataAccess\\DataAccess.csproj|c:\\users\\thucd\\source\\repos\\dataaccess\\dataaccess\\qlthietbi\\bo\\nhacungcapbo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E46666BC-DDBC-4570-8261-95DC5C024AFE}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\qlthietbi\\bo\\nhacungcapbo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,8 +41,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 573,
-          "SelectedChildIndex": 5,
+          "DockedWidth": 720,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,19 +58,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "Site.Master",
+              "DocumentMoniker": "C:\\Users\\Thucd\\source\\repos\\DataAccess\\QuanLiThietBi\\Site.Master",
+              "RelativeDocumentMoniker": "QuanLiThietBi\\Site.Master",
+              "ToolTip": "C:\\Users\\Thucd\\source\\repos\\DataAccess\\QuanLiThietBi\\Site.Master",
+              "RelativeToolTip": "QuanLiThietBi\\Site.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-03-24T11:38:17.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GhiTangThietBiBO.cs",
+              "DocumentMoniker": "C:\\Users\\Thucd\\source\\repos\\DataAccess\\DataAccess\\QLThietBi\\BO\\GhiTangThietBiBO.cs",
+              "RelativeDocumentMoniker": "DataAccess\\QLThietBi\\BO\\GhiTangThietBiBO.cs",
+              "ToolTip": "C:\\Users\\Thucd\\source\\repos\\DataAccess\\DataAccess\\QLThietBi\\BO\\GhiTangThietBiBO.cs",
+              "RelativeToolTip": "DataAccess\\QLThietBi\\BO\\GhiTangThietBiBO.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAowDwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T09:02:55.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "GhiTangThietBiChiTietBO.cs",
               "DocumentMoniker": "C:\\Users\\Thucd\\source\\repos\\DataAccess\\DataAccess\\QLThietBi\\BO\\GhiTangThietBiChiTietBO.cs",
               "RelativeDocumentMoniker": "DataAccess\\QLThietBi\\BO\\GhiTangThietBiChiTietBO.cs",
               "ToolTip": "C:\\Users\\Thucd\\source\\repos\\DataAccess\\DataAccess\\QLThietBi\\BO\\GhiTangThietBiChiTietBO.cs",
               "RelativeToolTip": "DataAccess\\QLThietBi\\BO\\GhiTangThietBiChiTietBO.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAIAwwNAAAABpAAAAAAAAAA==",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAawNcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T16:26:55.142Z"
+              "WhenOpened": "2025-03-21T16:26:55.142Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "GhiTangThietBiChiTiet.aspx",
               "DocumentMoniker": "C:\\Users\\Thucd\\source\\repos\\DataAccess\\QuanLiThietBi\\FormThietBi\\GhiTangThietBiChiTiet.aspx",
               "RelativeDocumentMoniker": "QuanLiThietBi\\FormThietBi\\GhiTangThietBiChiTiet.aspx",
@@ -63,15 +110,60 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "GhiTangThietBiChiTiet.aspx.cs",
               "DocumentMoniker": "C:\\Users\\Thucd\\source\\repos\\DataAccess\\QuanLiThietBi\\FormThietBi\\GhiTangThietBiChiTiet.aspx.cs",
               "RelativeDocumentMoniker": "QuanLiThietBi\\FormThietBi\\GhiTangThietBiChiTiet.aspx.cs",
               "ToolTip": "C:\\Users\\Thucd\\source\\repos\\DataAccess\\QuanLiThietBi\\FormThietBi\\GhiTangThietBiChiTiet.aspx.cs",
               "RelativeToolTip": "QuanLiThietBi\\FormThietBi\\GhiTangThietBiChiTiet.aspx.cs",
-              "ViewState": "AgIAAKcBAAAAAAAAAADwv8wBAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAABwBAAAAAAAAAAA2wEYAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-21T15:23:51.014Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 708,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NhaCungCap.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Thucd\\source\\repos\\DataAccess\\QuanLiThietBi\\FormThietBi\\NhaCungCap.aspx.cs",
+              "RelativeDocumentMoniker": "QuanLiThietBi\\FormThietBi\\NhaCungCap.aspx.cs",
+              "ToolTip": "C:\\Users\\Thucd\\source\\repos\\DataAccess\\QuanLiThietBi\\FormThietBi\\NhaCungCap.aspx.cs",
+              "RelativeToolTip": "QuanLiThietBi\\FormThietBi\\NhaCungCap.aspx.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAiwIgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T08:55:57.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NhaCungCap.aspx",
+              "DocumentMoniker": "C:\\Users\\Thucd\\source\\repos\\DataAccess\\QuanLiThietBi\\FormThietBi\\NhaCungCap.aspx",
+              "RelativeDocumentMoniker": "QuanLiThietBi\\FormThietBi\\NhaCungCap.aspx",
+              "ToolTip": "C:\\Users\\Thucd\\source\\repos\\DataAccess\\QuanLiThietBi\\FormThietBi\\NhaCungCap.aspx",
+              "RelativeToolTip": "QuanLiThietBi\\FormThietBi\\NhaCungCap.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-03-24T08:55:16.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NhaCungCapBO.cs",
+              "DocumentMoniker": "C:\\Users\\Thucd\\source\\repos\\DataAccess\\DataAccess\\QLThietBi\\BO\\NhaCungCapBO.cs",
+              "RelativeDocumentMoniker": "DataAccess\\QLThietBi\\BO\\NhaCungCapBO.cs",
+              "ToolTip": "C:\\Users\\Thucd\\source\\repos\\DataAccess\\DataAccess\\QLThietBi\\BO\\NhaCungCapBO.cs",
+              "RelativeToolTip": "DataAccess\\QLThietBi\\BO\\NhaCungCapBO.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAADgv6MAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T08:45:11.711Z",
               "EditorCaption": ""
             }
           ]

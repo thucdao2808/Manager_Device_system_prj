@@ -18,7 +18,7 @@ namespace QuanLiThietBi
     {
 
         private GhiTangThietBiBO tbgt = new GhiTangThietBiBO();
-        private List<DataAccess.QLThietBi.Model.GhiTangThietBi> ghiTangThietBi = new GhiTangThietBiBO().GetGhiTang();
+        private List<DataAccess.QLThietBi.Model.GhiTangThietBi> ghiTangThietBi = new GhiTangThietBiBO().GetGhiTangThietBi();
         private NhomThietBiBO ntb;
         private KhoPhongBO kp;
         private NhaCungCapBO ncc;
@@ -60,22 +60,22 @@ namespace QuanLiThietBi
         protected void imgEdit_Click(object sender, ImageClickEventArgs e)
         {
 
-            foreach (GridViewRow row in grvGhiTangct.Rows)
-            {
+            
                 ImageButton imgbtn = (ImageButton)sender;
 
                 pnlDetailChung.Visible = true;
-                int id = Convert.ToInt32(imgbtn.CommandArgument);
+                int id = int.Parse(imgbtn.CommandArgument);
                 var ListGt = dataBase.GhiTangThietBis.Find(id);
                 if (ListGt != null)
                 {
+                PhieuId.Value = ListGt.ID.ToString();
                     txtSoPhieu.Text = ListGt.SoPhieu;
                     txtMoTa.Text = ListGt.GhiChu;
                     txtNgayLap.Text = Convert.ToString(ListGt.NgayLapPhieu);
                 }
 
 
-            }
+            
 
 
 
@@ -452,15 +452,21 @@ namespace QuanLiThietBi
         }
         protected void btnThemSua_Click(object sender, EventArgs e)
         {
-            TextBox fieldIDPhieu = (TextBox)FindControl("FieldIDPhieu");
-            DataAccess.QLThietBi.Model.GhiTangThietBi gtbo = new DataAccess.QLThietBi.Model.GhiTangThietBi()
+
+            if (string.IsNullOrEmpty(PhieuId.Value))
             {
-                ID = int.Parse(fieldIDPhieu.Text),
+                throw new Exception("ID is missing.");
+            }
+            int idSelect = int.Parse(PhieuId.Value);
+            DataAccess.QLThietBi.Model.GhiTangThietBi gtbo = new DataAccess.QLThietBi.Model.GhiTangThietBi()
+            {  ID = idSelect,
                 SoPhieu = txtSoPhieu.Text,
+                DonViID = 1,
                 NgayLapPhieu = Convert.ToDateTime(txtNgayLap.Text),
                 GhiChu = txtMoTa.Text,
             };
-            GhiTangThietBiChiTietBO.UpdateGhiChu(gtbo);
+            GhiTangThietBiBO.UpdateGhiChu(gtbo);
+            LoadGrvListGhiTang();
         }
         #endregion
     }

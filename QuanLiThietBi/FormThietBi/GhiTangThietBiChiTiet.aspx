@@ -398,8 +398,7 @@
                         </div>
                     </div>
                     <asp:Panel ID="pnlChung" runat="server" GroupingText="Thông Tin Chung">
-                          <asp:HiddenField ID="FieldIDPhieu"
-      runat="server" />
+                         <asp:HiddenField ID="PhieuId" Value='<%#Eval("ID").ToString() %>'  runat="server" />
                         <div class="Box-ContainItem">
                             <div class="ContainItem">
                                 <div class="form-groupss">

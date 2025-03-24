@@ -1,6 +1,7 @@
 ﻿using DataAccess.QLThietBi.Model;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 
@@ -10,7 +11,7 @@ namespace DataAccess.QLThietBi.BO
     {
         public GhiTangThietBiBO() { }
 
-        public List<GhiTangThietBi> GetGhiTang()
+        public List<GhiTangThietBi> GetGhiTangThietBi()
         {
             var cacheGhiTang = new DefaultCacheProvider();
             string CacheKeyGhiTang = cacheGhiTang.BuildCachedKey("GhiTangThietBi", "GetGhiTang");
@@ -45,6 +46,24 @@ namespace DataAccess.QLThietBi.BO
             }
             return listGhiTang;
 
+        }
+
+        public static void UpdateGhiChu(GhiTangThietBi tbct)
+        {
+            var cacheUp = new DefaultCacheProvider();
+            string cacheKeyUp = cacheUp.BuildCachedKey("GhiTangThietBi", "UpdateGhiChu");
+            string sql = "UPDATE GhiTangThietBi SET SoPhieu = @sp , NgayLapPhieu= @nlp ,GhiChu=@gc,DonViID=@dv where ID =@ID";
+            using (var db = new QuanLyThietBiEntities())
+            {
+                db.Database.ExecuteSqlCommand(sql,
+                    new SqlParameter("@ID", tbct.ID),
+                    new SqlParameter("sp",tbct.SoPhieu),
+                    new SqlParameter("@nlp", tbct.NgayLapPhieu),
+                    new SqlParameter("@gc", tbct.GhiChu),
+                    new SqlParameter("@dv", tbct.DonViID));
+            }
+            cacheUp.RemoveByFirstName(cacheKeyUp);
+            cacheUp.RemoveByFirstName(cacheUp.BuildCachedKey("GhiTangThietBi", "GetGhiTangThietBi"));
         }
 
     }

@@ -197,18 +197,22 @@ namespace DataAccess.QLThietBi.BO
             
 
         }
-        public static void UpdateGhiChu(GhiTangThietBi tbct)
-        {
-            var cacheUp = new DefaultCacheProvider();
-            string cacheKeyUp = cacheUp.BuildCachedKey("GhiTangThietBiChiTiet", "UpdateGhiChu");
-            using (var db = new QuanLyThietBiEntities())
-            {
-                db.GhiTangThietBis.AddOrUpdate(tbct);
-                db.SaveChanges();
-                cacheUp.RemoveByFirstName(cacheKeyUp);
-                cacheUp.RemoveByFirstName(cacheUp.BuildCachedKey("GhiTangThietBiChiTiet", "GetGhiTang"));
-            }
-        }
+        //public static void UpdateGhiChu(GhiTangThietBi tbct)
+        //{
+        //    var cacheUp = new DefaultCacheProvider();
+        //    string cacheKeyUp = cacheUp.BuildCachedKey("GhiTangThietBiChiTiet", "UpdateGhiChu");
+        //    string sql = "UPDATE from GhiTangThietBi SET SoPhieu = @sp , NgayLapPhieu= @nlp ,GhiChu=@gc,DonViID=@dv where ID =@ID";
+        //    using (var db = new QuanLyThietBiEntities())
+        //    {
+        //        db.Database.ExecuteSqlCommand(sql,
+        //            new SqlParameter("@ID", tbct.ID),
+        //            new SqlParameter("@NgayLapPhieu", tbct.NgayLapPhieu),
+        //            new SqlParameter("@gc", tbct.GhiChu),
+        //            new SqlParameter("@dv", tbct.DonViID));       
+        //    }
+        //    cacheUp.RemoveByFirstName(cacheKeyUp);
+        //        cacheUp.RemoveByFirstName(cacheUp.BuildCachedKey("GhiTangThietBiChiTiet", "GetGhiTang"));
+        //}
 
         #endregion
     }
