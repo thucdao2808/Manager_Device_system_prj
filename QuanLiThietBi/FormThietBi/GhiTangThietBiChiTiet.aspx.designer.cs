@@ -132,13 +132,13 @@ namespace QuanLiThietBi
         protected global::System.Web.UI.WebControls.Label Label3;
 
         /// <summary>
-        /// TextBox1 control.
+        /// TxtSoPhieuSearch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox TxtSoPhieuSearch;
 
         /// <summary>
         /// btnSearch control.
@@ -177,6 +177,15 @@ namespace QuanLiThietBi
         protected global::System.Web.UI.WebControls.Button btnThemPhieu;
 
         /// <summary>
+        /// btnThemSua control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnThemSua;
+
+        /// <summary>
         /// btnHuy control.
         /// </summary>
         /// <remarks>
@@ -193,6 +202,15 @@ namespace QuanLiThietBi
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel pnlChung;
+
+        /// <summary>
+        /// FieldIDPhieu control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField FieldIDPhieu;
 
         /// <summary>
         /// txtSoPhieu control.
@@ -229,15 +247,6 @@ namespace QuanLiThietBi
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtMoTa;
-
-        /// <summary>
-        /// UpdatePanelGrvDetail control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.UpdatePanel UpdatePanelGrvDetail;
 
         /// <summary>
         /// PanelGrvDetail control.

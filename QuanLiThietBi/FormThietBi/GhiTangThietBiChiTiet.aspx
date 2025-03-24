@@ -90,7 +90,7 @@
                 font-weight: bold;
             }
 
-            /* Responsive */
+           
             @media (max-width: 768px) {
                 .date-selection {
                     flex-direction: column;
@@ -334,7 +334,7 @@
             <div class="container-wrapper">
                 <div class="group-buttons">
                     <asp:Button ID="btnAdd" runat="server" Text="Thêm" CssClass="btn-style btn-insert" OnClick="btnAdd_Click" />
-                    <asp:Button ID="btnExport" runat="server" Text="Xuất" CssClass="btn-style btn-download" />
+                    <asp:Button ID="btnExport" runat="server" Text="Xuất" CssClass="btn-style btn-download" OnClick="btnExport_Click" />
                     <asp:Button ID="btnDel" runat="server" Text="Xóa" CssClass="btn-style btn-remove" />
                 </div>
 
@@ -356,8 +356,8 @@
 
                         <div class="search-bar">
                             <asp:Label ID="Label3" runat="server" Text="Số Phiếu"></asp:Label>
-                            <asp:TextBox ID="TextBox1" runat="server" PlaceHolder="Nhập số phiếu" CssClass="input-textbox"></asp:TextBox>
-                            <asp:Button ID="btnSearch" runat="server" Text="Tìm Kiếm" CssClass="btn-style btn-searching" />
+                            <asp:TextBox ID="TxtSoPhieuSearch" runat="server" PlaceHolder="Nhập số phiếu" CssClass="input-textbox"></asp:TextBox>
+                            <asp:Button ID="btnSearch" runat="server" Text="Tìm Kiếm" CssClass="btn-style btn-searching" OnClick="btnSearch_Click" />
                         </div>
                     </div>
                 </div>
@@ -372,14 +372,14 @@
                         </asp:TemplateField>
                         <asp:TemplateField>
                             <ItemTemplate>
-                                <asp:ImageButton ID="imgEdit" runat="server" Width="20" Height="20" CssClass="grid-icon" ImageUrl="~/Resource/Images/pen.png" OnClick="imgEdit_Click" />
+                                <asp:ImageButton ID="imgEdit" runat="server" Width="20" Height="20" CssClass="grid-icon" CommandArgument='<%#Eval("ID") %>' ImageUrl="~/Resource/Images/pen.png" OnClick="imgEdit_Click" />
                             </ItemTemplate>
                         </asp:TemplateField>
                         <asp:BoundField DataField="SoPhieu" HeaderText="Số Phiếu" ItemStyle-CssClass="grid-cell" />
                         <asp:BoundField DataField="NgayLapPhieu" HeaderText="Ngày Nhập" ItemStyle-CssClass="grid-cell" />
                         <asp:TemplateField HeaderText="Thành tiền">
                             <ItemTemplate>
-                                <asp:Label ID="GiaTien" runat="server" CssClass="grid-price" Text='<%#GetMoney(Convert.ToInt32(Eval("ID"))) %>'></asp:Label>
+                                <asp:Label ID="GiaTien" runat="server" CssClass="grid-price" Text='<%#GetMoney(Convert.ToInt64(Eval("DonViID"))) %>'></asp:Label>
                             </ItemTemplate>
                         </asp:TemplateField>
                         <asp:BoundField DataField="GhiChu" HeaderText="Mô tả" ItemStyle-CssClass="grid-cell" />
@@ -391,14 +391,19 @@
                             <asp:Button ID="btnThemPhieu" runat="server" Text="Ghi" OnClick="btnThemPhieu_Click" />
                         </div>
                         <div>
+                            <asp:Button ID="btnThemSua" runat="server" OnClick="btnThemSua_Click"  Text="Button" />
+                        </div>
+                        <div>
                             <asp:ImageButton ID="btnHuy" CssClass="butCancel" ImageUrl="~/Resource/Images/cancel.jpg" runat="server" OnClick="btnHuy_Click" />
                         </div>
                     </div>
                     <asp:Panel ID="pnlChung" runat="server" GroupingText="Thông Tin Chung">
+                          <asp:HiddenField ID="FieldIDPhieu"
+      runat="server" />
                         <div class="Box-ContainItem">
                             <div class="ContainItem">
                                 <div class="form-groupss">
-                                    <label for="txtSoPhieu">Số phiếu:</label>
+                                    <label for="lblSoPhieu">Số phiếu:</label>
                                     <asp:TextBox ID="txtSoPhieu" runat="server" CssClass="form-controla" Enabled="true" ReadOnly="true"></asp:TextBox>
                                 </div>
                                 <div class="form-groupss">
@@ -415,10 +420,9 @@
                     </asp:Panel>
 
                 </asp:Panel>
-                <asp:UpdatePanel ID="UpdatePanelGrvDetail" runat="server">
-                    <ContentTemplate>
+              
 
-                        <asp:Panel ID="PanelGrvDetail" runat="server" CssClass="panel-container" Visible="true" GroupingText="Danh sách Thiết Bị Ghi Tăng">
+                        <asp:Panel ID="PanelGrvDetail" runat="server" CssClass="panel-container" Visible="false" GroupingText="Danh sách Thiết Bị Ghi Tăng">
                             <div>
                                 <asp:Button ID="Button1" runat="server" Text="Thêm vào danh sách" OnClick="Button1_Click" />
                             </div>
@@ -482,11 +486,10 @@
                                 </Columns>
                             </asp:GridView>
                         </asp:Panel>
-                    </ContentTemplate>
-                </asp:UpdatePanel>
+                 
 
 
-                <asp:Panel ID="PanelContain" runat="server" CssClass="boxGhiTang" Visible="true">
+                <asp:Panel ID="PanelContain" runat="server" CssClass="boxGhiTang" Visible="false">
                     <asp:Panel ID="pnlThietBi" runat="server" GroupingText="Thiết Bị Ghi Tăng">
                         <div class="ghiTang-group">
                             <label>Nhóm thiết bị:</label>
@@ -562,7 +565,7 @@
                     <div>
                         <div class="ghiTang-buttons">
                             <asp:Button ID="btnGhi" runat="server" Text="Ghi" CssClass="ghiTang-btn" OnClick="btnGhi_Click" />
-                            <asp:Button ID="btnDong" runat="server" Text="Đóng" CssClass="ghiTang-btn-danger" />
+                            <asp:Button ID="btnDong" runat="server" Text="Đóng" CssClass="ghiTang-btn-danger" OnClick="btnDong_Click" />
                         </div>
                     </div>
                 </asp:Panel>

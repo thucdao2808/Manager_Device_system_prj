@@ -21,7 +21,8 @@ namespace QuanLiThietBi
         }
         private KhoPhongBO khophong;
         private QuanLyThietBiEntities db = new QuanLyThietBiEntities();
-      
+
+        #region Logic
         public void LoadData()
         {
             KhoPhongBO khophong = new KhoPhongBO();
@@ -156,5 +157,6 @@ namespace QuanLiThietBi
             gvKhoPhong.DataBind();
             txtSearch.Text = string.Empty;
         }
+        #endregion
     }
 }

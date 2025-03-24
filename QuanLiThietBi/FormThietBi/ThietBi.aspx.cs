@@ -21,6 +21,7 @@ namespace QuanLiThietBi.FormThietBi
                 LoadThietBi();
             }    
         }
+        #region Logic
         public void LoadThietBi()
         {
             ThietBiBO thietbi = new ThietBiBO();
@@ -274,6 +275,7 @@ namespace QuanLiThietBi.FormThietBi
             grvThietBi.DataBind();
             txtSearch.Text = string.Empty;
         }
-       
+        #endregion
+
     }
 }

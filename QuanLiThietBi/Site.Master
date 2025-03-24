@@ -107,7 +107,7 @@ main {
                         <asp:HyperLink ID="hlThietBi" runat="server" NavigateUrl="~/FormThietBi/ThietBi.aspx">Thiết Bị</asp:HyperLink>
                     </li> 
                     <li class="DetailItemMenuBar">
-                        <asp:HyperLink ID="hlGhiTangThietBi" runat="server" NavigateUrl="~/FormThietBi/GhiTangThietBiChiTiet.aspx">Thiết Bị</asp:HyperLink>
+                        <asp:HyperLink ID="hlGhiTangThietBi" runat="server" NavigateUrl="~/FormThietBi/GhiTangThietBiChiTiet.aspx">Ghi Tăng Thiết Bị</asp:HyperLink>
                     </li>
                 </ul>
             </nav>

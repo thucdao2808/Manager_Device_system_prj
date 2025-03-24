@@ -23,6 +23,7 @@ namespace QuanLiThietBi
         private KhoPhongBO kp;
         private NhaCungCapBO ncc;
         private ThietBiBO tb;
+        private QuanLyThietBiEntities dataBase = new QuanLyThietBiEntities();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -30,9 +31,11 @@ namespace QuanLiThietBi
                 Loadgrv();
                 LoadGrvListGhiTang();
                 BindDropdownList();
+                LoadGv();
             }
         }
 
+        #region Logic
         public void Loadgrv()
         {
             GhiTangThietBiChiTietBO gtct = new GhiTangThietBiChiTietBO();
@@ -40,22 +43,42 @@ namespace QuanLiThietBi
             grvGhiTangct.DataSource = data;
             grvGhiTangct.DataBind();
         }
-        public string GetMoney(int id)
+        public string GetMoney(long DonViID)
         {
             GhiTangThietBiChiTietBO gt = new GhiTangThietBiChiTietBO();
-            return gt.GetMoney(id);
+            return gt.GetMoney(DonViID);
 
         }
         public void LoadGrvListGhiTang()
         {
             GhiTangThietBiChiTietBO gtang = new GhiTangThietBiChiTietBO();
-            var dtb = gtang.GetGhiTang();
+            var dtb = gtang.GetGhiTangCt();
             grvThietBi.DataSource = dtb;
             grvThietBi.DataBind();
 
         }
         protected void imgEdit_Click(object sender, ImageClickEventArgs e)
         {
+
+            foreach (GridViewRow row in grvGhiTangct.Rows)
+            {
+                ImageButton imgbtn = (ImageButton)sender;
+
+                pnlDetailChung.Visible = true;
+                int id = Convert.ToInt32(imgbtn.CommandArgument);
+                var ListGt = dataBase.GhiTangThietBis.Find(id);
+                if (ListGt != null)
+                {
+                    txtSoPhieu.Text = ListGt.SoPhieu;
+                    txtMoTa.Text = ListGt.GhiChu;
+                    txtNgayLap.Text = Convert.ToString(ListGt.NgayLapPhieu);
+                }
+
+
+            }
+
+
+
 
         }
         #region GetInfo
@@ -289,9 +312,9 @@ namespace QuanLiThietBi
             ddlKhoPhongs.DataValueField = "ID";
             ddlKhoPhongs.DataBind();
 
-            using(var db = new QuanLyThietBiEntities())
+            using (var db = new QuanLyThietBiEntities())
             {
-               
+
                 var dbDvt = db.DmRootThietBiDonViTinhs.Select(dvt => new
                 {
                     dvt.TenDonViTinh,
@@ -319,17 +342,17 @@ namespace QuanLiThietBi
                 ddlThuongHieuText.DataValueField = "ID";
                 ddlThuongHieuText.DataBind();
             }
-            
+
         }
 
         protected void txtSoHieuDen_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         protected void txtSoHieuTu_TextChanged(object sender, EventArgs e)
         {
-if (!string.IsNullOrEmpty(txtSoHieuTu.Text) && !string.IsNullOrEmpty(txtSoLuong.Text))
+            if (!string.IsNullOrEmpty(txtSoHieuTu.Text) && !string.IsNullOrEmpty(txtSoLuong.Text))
             {
                 int soHieuTu = int.Parse(txtSoHieuTu.Text);
                 int soLuong = int.Parse(txtSoLuong.Text);
@@ -340,7 +363,7 @@ if (!string.IsNullOrEmpty(txtSoHieuTu.Text) && !string.IsNullOrEmpty(txtSoLuong.
 
         protected void txtThanhTien_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         protected void txtDonGia_TextChanged(object sender, EventArgs e)
@@ -357,23 +380,88 @@ if (!string.IsNullOrEmpty(txtSoHieuTu.Text) && !string.IsNullOrEmpty(txtSoLuong.
             {
                 ThietBiID = Convert.ToInt32(ddlThietBi.SelectedValue),
                 NhaCungCapID = Convert.ToInt32(ddlNhaCungCap.SelectedValue),
-                KhoPhongID =Convert.ToInt32(ddlKhoPhongs.SelectedValue),
+                KhoPhongID = Convert.ToInt32(ddlKhoPhongs.SelectedValue),
                 SoLuong = Convert.ToInt32(txtSoLuong.Text),
                 SoHieuTu = Convert.ToInt32(txtSoHieuTu.Text),
                 SoHieuDen = Convert.ToInt32(txtSoHieuDen.Text),
                 DonGia = Convert.ToDecimal(txtDonGia.Text),
                 ThanhTien = Convert.ToDecimal(txtThanhTien.Text),
                 ThuongHieuID = Convert.ToInt32(ddlThuongHieu2.SelectedValue),
-                
-
-
             };
+
+            DateTime ngayMua, ngayHetBaoHanh;
+            if (DateTime.TryParse(txtNgayMua.Text, out ngayMua))
+            {
+                gtDetail.NgayMua = ngayMua;
+            }
+            if (DateTime.TryParse(txtNgayHetHan.Text, out ngayHetBaoHanh))
+            {
+                gtDetail.NgayHetBaoHanh = ngayHetBaoHanh;
+            }
+
             GhiTangThietBiChiTietBO.InsertDetailForm(gtDetail);
-            LoadGrvListGhiTang();
+            LoadGv();
+            PanelGrvDetail.Visible = true;
+        }
+        public void LoadGv()
+        {
+            using (var db = new QuanLyThietBiEntities())
+            {
+                GhiTangThietBiChiTietBO gt = new GhiTangThietBiChiTietBO();
+                var dbase = gt.GetGhiTangCt();
+                grvThietBi.DataSource = dbase;
+                grvThietBi.DataBind();
+
+            }
+        }
+
+        protected void btnDong_Click(object sender, EventArgs e)
+        {
+            PanelContain.Visible = false;
+            PanelGrvDetail.Visible = false;
+            pnlDetailChung.Visible = false;
+        }
+
+        protected void btnExport_Click(object sender, EventArgs e)
+        {
+            string fileName = System.IO.Path.GetFileNameWithoutExtension(Request.PhysicalPath);
+            GridView grv = new GridView();
+            grv = grvGhiTangct;
+
+            GhiTangThietBiChiTietBO gtct = new GhiTangThietBiChiTietBO();
+            gtct.ExportExcel(fileName, grv);
+        }
+
+        public override void VerifyRenderingInServerForm(Control control)
+        {
 
         }
-        
+
+        protected void btnSearch_Click(object sender, EventArgs e)
+        {
+            string nameGt = TxtSoPhieuSearch.Text.Trim();
+            using (var db = new QuanLyThietBiEntities())
+            {
+                var dt = db.GhiTangThietBis.Where(s => s.SoPhieu.Contains(nameGt)).ToList();
+                grvGhiTangct.DataSource = dt;
+                grvGhiTangct.DataBind();
+                TxtSoPhieuSearch.Text = string.Empty;
+            }
+
+
+        }
+        protected void btnThemSua_Click(object sender, EventArgs e)
+        {
+            TextBox fieldIDPhieu = (TextBox)FindControl("FieldIDPhieu");
+            DataAccess.QLThietBi.Model.GhiTangThietBi gtbo = new DataAccess.QLThietBi.Model.GhiTangThietBi()
+            {
+                ID = int.Parse(fieldIDPhieu.Text),
+                SoPhieu = txtSoPhieu.Text,
+                NgayLapPhieu = Convert.ToDateTime(txtNgayLap.Text),
+                GhiChu = txtMoTa.Text,
+            };
+            GhiTangThietBiChiTietBO.UpdateGhiChu(gtbo);
+        }
+        #endregion
     }
-
-
 }

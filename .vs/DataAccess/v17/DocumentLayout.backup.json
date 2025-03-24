@@ -3,36 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Thucd\\source\\repos\\DataAccess\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7EECC97F-09A9-4D8C-BEE4-F9F2A32F9E41}|QuanLiThietBi\\QuanLiThietBi.csproj|C:\\Users\\Thucd\\source\\repos\\DataAccess\\quanlithietbi\\formthietbi\\ghitangthietbichitiet.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EECC97F-09A9-4D8C-BEE4-F9F2A32F9E41}|QuanLiThietBi\\QuanLiThietBi.csproj|c:\\users\\thucd\\source\\repos\\dataaccess\\quanlithietbi\\formthietbi\\ghitangthietbichitiet.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EECC97F-09A9-4D8C-BEE4-F9F2A32F9E41}|QuanLiThietBi\\QuanLiThietBi.csproj|solutionrelative:quanlithietbi\\formthietbi\\ghitangthietbichitiet.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E46666BC-DDBC-4570-8261-95DC5C024AFE}|DataAccess\\DataAccess.csproj|c:\\users\\thucd\\source\\repos\\dataaccess\\dataaccess\\qlthietbi\\bo\\ghitangthietbichitietbo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E46666BC-DDBC-4570-8261-95DC5C024AFE}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\qlthietbi\\bo\\ghitangthietbichitietbo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E46666BC-DDBC-4570-8261-95DC5C024AFE}|DataAccess\\DataAccess.csproj|C:\\Users\\Thucd\\source\\repos\\DataAccess\\dataaccess\\qlthietbi\\bo\\khophongbo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E46666BC-DDBC-4570-8261-95DC5C024AFE}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\qlthietbi\\bo\\khophongbo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7EECC97F-09A9-4D8C-BEE4-F9F2A32F9E41}|QuanLiThietBi\\QuanLiThietBi.csproj|C:\\Users\\Thucd\\source\\repos\\DataAccess\\quanlithietbi\\formthietbi\\quanlikhophong.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EECC97F-09A9-4D8C-BEE4-F9F2A32F9E41}|QuanLiThietBi\\QuanLiThietBi.csproj|solutionrelative:quanlithietbi\\formthietbi\\quanlikhophong.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7EECC97F-09A9-4D8C-BEE4-F9F2A32F9E41}|QuanLiThietBi\\QuanLiThietBi.csproj|c:\\users\\thucd\\source\\repos\\dataaccess\\quanlithietbi\\formthietbi\\ghitangthietbichitiet.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{7EECC97F-09A9-4D8C-BEE4-F9F2A32F9E41}|QuanLiThietBi\\QuanLiThietBi.csproj|C:\\Users\\Thucd\\source\\repos\\DataAccess\\quanlithietbi\\formthietbi\\ghitangthietbichitiet.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{7EECC97F-09A9-4D8C-BEE4-F9F2A32F9E41}|QuanLiThietBi\\QuanLiThietBi.csproj|solutionrelative:quanlithietbi\\formthietbi\\ghitangthietbichitiet.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E46666BC-DDBC-4570-8261-95DC5C024AFE}|DataAccess\\DataAccess.csproj|C:\\Users\\Thucd\\source\\repos\\DataAccess\\dataaccess\\qlthietbi\\model\\quanlithietbief.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
-      "RelativeMoniker": "D:0:0:{E46666BC-DDBC-4570-8261-95DC5C024AFE}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\qlthietbi\\model\\quanlithietbief.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7EECC97F-09A9-4D8C-BEE4-F9F2A32F9E41}|QuanLiThietBi\\QuanLiThietBi.csproj|C:\\Users\\Thucd\\source\\repos\\DataAccess\\quanlithietbi\\formthietbi\\thietbi.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EECC97F-09A9-4D8C-BEE4-F9F2A32F9E41}|QuanLiThietBi\\QuanLiThietBi.csproj|solutionrelative:quanlithietbi\\formthietbi\\thietbi.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7EECC97F-09A9-4D8C-BEE4-F9F2A32F9E41}|QuanLiThietBi\\QuanLiThietBi.csproj|C:\\Users\\Thucd\\source\\repos\\DataAccess\\quanlithietbi\\formthietbi\\thietbi.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{7EECC97F-09A9-4D8C-BEE4-F9F2A32F9E41}|QuanLiThietBi\\QuanLiThietBi.csproj|solutionrelative:quanlithietbi\\formthietbi\\thietbi.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{E46666BC-DDBC-4570-8261-95DC5C024AFE}|DataAccess\\DataAccess.csproj|C:\\Users\\Thucd\\source\\repos\\DataAccess\\dataaccess\\qlthietbi\\bo\\ghitangthietbichitietbo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E46666BC-DDBC-4570-8261-95DC5C024AFE}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\qlthietbi\\bo\\ghitangthietbichitietbo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 573,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -55,29 +35,22 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 624,
-          "SelectedChildIndex": 0,
-          "Children": [
+            },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "GhiTangThietBiChiTietBO.cs",
               "DocumentMoniker": "C:\\Users\\Thucd\\source\\repos\\DataAccess\\DataAccess\\QLThietBi\\BO\\GhiTangThietBiChiTietBO.cs",
               "RelativeDocumentMoniker": "DataAccess\\QLThietBi\\BO\\GhiTangThietBiChiTietBO.cs",
               "ToolTip": "C:\\Users\\Thucd\\source\\repos\\DataAccess\\DataAccess\\QLThietBi\\BO\\GhiTangThietBiChiTietBO.cs",
               "RelativeToolTip": "DataAccess\\QLThietBi\\BO\\GhiTangThietBiChiTietBO.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAIA2wHoAAABBAAAAAAAAAA==",
+              "ViewState": "AgIAAFYAAAAAAAAAAIAwwNAAAABpAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T10:26:10.416Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T16:26:55.142Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "GhiTangThietBiChiTiet.aspx",
               "DocumentMoniker": "C:\\Users\\Thucd\\source\\repos\\DataAccess\\QuanLiThietBi\\FormThietBi\\GhiTangThietBiChiTiet.aspx",
               "RelativeDocumentMoniker": "QuanLiThietBi\\FormThietBi\\GhiTangThietBiChiTiet.aspx",
@@ -85,76 +58,7 @@
               "RelativeToolTip": "QuanLiThietBi\\FormThietBi\\GhiTangThietBiChiTiet.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-03-15T11:37:28Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "QuanLiThietBiEF.edmx [Diagram1]",
-              "DocumentMoniker": "C:\\Users\\Thucd\\source\\repos\\DataAccess\\DataAccess\\QLThietBi\\Model\\QuanLiThietBiEF.edmx",
-              "RelativeDocumentMoniker": "DataAccess\\QLThietBi\\Model\\QuanLiThietBiEF.edmx",
-              "ToolTip": "C:\\Users\\Thucd\\source\\repos\\DataAccess\\DataAccess\\QLThietBi\\Model\\QuanLiThietBiEF.edmx [Diagram1]",
-              "RelativeToolTip": "DataAccess\\QLThietBi\\Model\\QuanLiThietBiEF.edmx [Diagram1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2025-03-15T06:18:17.765Z",
-              "EditorCaption": " [Diagram1]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ThietBi.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Thucd\\source\\repos\\DataAccess\\QuanLiThietBi\\FormThietBi\\ThietBi.aspx.cs",
-              "RelativeDocumentMoniker": "QuanLiThietBi\\FormThietBi\\ThietBi.aspx.cs",
-              "ToolTip": "C:\\Users\\Thucd\\source\\repos\\DataAccess\\QuanLiThietBi\\FormThietBi\\ThietBi.aspx.cs",
-              "RelativeToolTip": "QuanLiThietBi\\FormThietBi\\ThietBi.aspx.cs",
-              "ViewState": "AgIAAMsAAAAAAAAAAAAkwB8AAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T14:38:29.389Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ThietBi.aspx",
-              "DocumentMoniker": "C:\\Users\\Thucd\\source\\repos\\DataAccess\\QuanLiThietBi\\FormThietBi\\ThietBi.aspx",
-              "RelativeDocumentMoniker": "QuanLiThietBi\\FormThietBi\\ThietBi.aspx",
-              "ToolTip": "C:\\Users\\Thucd\\source\\repos\\DataAccess\\QuanLiThietBi\\FormThietBi\\ThietBi.aspx",
-              "RelativeToolTip": "QuanLiThietBi\\FormThietBi\\ThietBi.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-03-12T14:09:55.099Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 474,
-          "SelectedChildIndex": 2,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "QuanLiKhoPhong.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Thucd\\source\\repos\\DataAccess\\QuanLiThietBi\\FormThietBi\\QuanLiKhoPhong.aspx.cs",
-              "RelativeDocumentMoniker": "QuanLiThietBi\\FormThietBi\\QuanLiKhoPhong.aspx.cs",
-              "ToolTip": "C:\\Users\\Thucd\\source\\repos\\DataAccess\\QuanLiThietBi\\FormThietBi\\QuanLiKhoPhong.aspx.cs",
-              "RelativeToolTip": "QuanLiThietBi\\FormThietBi\\QuanLiKhoPhong.aspx.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAcwEQAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T17:22:07.671Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "KhoPhongBO.cs",
-              "DocumentMoniker": "C:\\Users\\Thucd\\source\\repos\\DataAccess\\DataAccess\\QLThietBi\\BO\\KhoPhongBO.cs",
-              "RelativeDocumentMoniker": "DataAccess\\QLThietBi\\BO\\KhoPhongBO.cs",
-              "ToolTip": "C:\\Users\\Thucd\\source\\repos\\DataAccess\\DataAccess\\QLThietBi\\BO\\KhoPhongBO.cs",
-              "RelativeToolTip": "DataAccess\\QLThietBi\\BO\\KhoPhongBO.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAASwEAAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T16:26:11.515Z",
+              "WhenOpened": "2025-03-21T16:23:00.671Z",
               "EditorCaption": ""
             },
             {
@@ -163,11 +67,11 @@
               "Title": "GhiTangThietBiChiTiet.aspx.cs",
               "DocumentMoniker": "C:\\Users\\Thucd\\source\\repos\\DataAccess\\QuanLiThietBi\\FormThietBi\\GhiTangThietBiChiTiet.aspx.cs",
               "RelativeDocumentMoniker": "QuanLiThietBi\\FormThietBi\\GhiTangThietBiChiTiet.aspx.cs",
-              "ToolTip": "C:\\Users\\Thucd\\source\\repos\\DataAccess\\QuanLiThietBi\\FormThietBi\\GhiTangThietBiChiTiet.aspx.cs",
-              "RelativeToolTip": "QuanLiThietBi\\FormThietBi\\GhiTangThietBiChiTiet.aspx.cs",
-              "ViewState": "AgIAAF4BAAAAAAAAAAAqwG4BAAAQAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Thucd\\source\\repos\\DataAccess\\QuanLiThietBi\\FormThietBi\\GhiTangThietBiChiTiet.aspx.cs*",
+              "RelativeToolTip": "QuanLiThietBi\\FormThietBi\\GhiTangThietBiChiTiet.aspx.cs*",
+              "ViewState": "AgIAAKcBAAAAAAAAAADwv9IBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T15:09:13.853Z",
+              "WhenOpened": "2025-03-21T15:23:51.014Z",
               "EditorCaption": ""
             }
           ]

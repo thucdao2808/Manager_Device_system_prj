@@ -23,8 +23,8 @@ namespace QuanLiThietBi.FormThietBi
         private NhaCungCapBO nhacungcap;
         private ThietBiBO thietbi;
         private QuanLyThietBiEntities db = new QuanLyThietBiEntities();
-      
 
+        #region Logic
         public void LoadNhaCungCap()
         {
             NhaCungCapBO nhacungcap = new NhaCungCapBO();
@@ -159,11 +159,12 @@ namespace QuanLiThietBi.FormThietBi
 
         protected void btnSearch_Click(object sender, EventArgs e)
         {
-            var name = txtSearch.Text.Trim();
-            var dt = db.KhoPhongs.Where(n => n.TenKhoPhong.Contains(name)).ToList();
+            var nameNhaCungCap = txtSearch.Text.Trim();
+            var dt = db.NhaCungCaps.Where(n => n.TenNhaCungCap.Contains(nameNhaCungCap)).ToList();
             grvNhaCungCap.DataSource = dt;
             grvNhaCungCap.DataBind();
             txtSearch.Text = string.Empty;
         }
+        #endregion
     }
 }
